@@ -1,0 +1,53 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: beige;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: brown;
+  padding: 10px 20px;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+nav {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.secoes {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 30px;
+  transition: transform 150ms linear;
+}
+
+.secoes:hover {
+  transform: scale(1.1);
+}
+
+.conteudo {
+  background: brown;
+  color: white;
+  width: 80%;
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 20px 20px;
+  background: brown;
+}
