@@ -11,18 +11,18 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background: #8cc0de;
+  background: #e6ba95;
   padding: 10px 20px;
   align-items: flex-end;
-  margin-bottom: 10px;
   border-bottom-style: solid;
   border-bottom-width: 4px;
-  border-bottom-color: #7895b2;
+  border-bottom-color: #c98474;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 nav {
+  display: inline-block;
   text-align: right;
   margin-right: 30px;
 }
@@ -30,8 +30,9 @@ nav {
 .secoes {
   display: inline-flex;
   align-items: center;
-  color: white;
-  font-weight: 500;
+  color: #c98474;
+  font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
   margin-right: 30px;
   transition: transform 150ms linear;
@@ -41,14 +42,19 @@ nav {
   transform: scale(1.1);
 }
 
+main {
+  width: 100vw;
+  margin-bottom: 10px;
+}
+
 .conteudo {
-  background: #8cc0de;
+  background: #e6ba95;
   color: white;
   width: 730px;
   height: 350px;
   border-style: solid;
   border-width: 1px;
-  border-color: #7895b2;
+  border-color: #c98474;
   border-radius: 5px;
 }
 
@@ -56,15 +62,63 @@ h1 {
   padding: 15px;
   border-bottom: 10px;
   border-style: solid;
-  border-width: 1px;
-  border-color: #7895b2;
+  border-bottom-width: 2px;
+  border-color: #c98474;
+  font-weight: bold;
+  font-size: 24px;
+  color: #594545;
+}
+
+p {
+  color: #594545;
+  margin: 10px;
 }
 
 footer {
+  display: flex;
   position: fixed;
+  align-items: center;
   bottom: 0;
   width: 100%;
   height: 50px;
   padding: 20px 20px;
-  background: #8cc0de;
+  background: #e6ba95;
+  border-top-style: solid;
+  border-top-width: 4px;
+  border-top-color: #c98474;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#nome-sobrenome,
+#email,
+#telefone {
+  margin-bottom: 2px;
+  color: #594545;
+}
+
+#nome-sobrenome:hover,
+#email:hover,
+#telefone:hover {
+  border-color: #c98474;
+  font-size: 15px;
+}
+
+.enviar {
+  width: 5%;
+  padding: 8px 0;
+  background: #c98474;
+  color: #f9ecec;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
